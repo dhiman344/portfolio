@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Recipe Haven</title>
+
+  <link rel="stylesheet" href="contact.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="contact-header">
+    <a href="index.html" class="logo">
+      Recipe<span>Haven.</span>
+    </a>
+
+    <nav>
+      <a href="index.html#recipes">Recipes</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html" class="nav-contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <span class="eyebrow">WE'D LOVE TO HEAR FROM YOU</span>
+
+      <h1>Let's talk <em>food.</em></h1>
+
+      <p>
+        Have a recipe question, a suggestion, or just want to say hello?
+        Send us a message. We're happy to hear from you!
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+      <div class="contact-info">
+        <span class="eyebrow">GET IN TOUCH</span>
+
+        <h2>Every great recipe starts with a conversation.</h2>
+
+        <p>
+          Whether you need help finding a recipe or want to share
+          your cooking experience, we're here to help.
+        </p>
+
+        <div class="info-item">
+          <span class="info-icon">✉</span>
+          <div>
+            <h3>Email Us</h3>
+            <p>Send us your questions and suggestions.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="info-icon">🍽</span>
+          <div>
+            <h3>Recipe Suggestions</h3>
+            <p>Tell us which dishes you'd love to discover.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="info-icon">♡</span>
+          <div>
+            <h3>Share Your Feedback</h3>
+            <p>Help us make Recipe Haven even better.</p>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link">
+          ← Back to recipes
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+
+        <h2>Send us a message</h2>
+        <p class="form-subtitle">
+          Fill out the form below and we'll be glad to hear from you.
+        </p>
+
+        <!-- Replace YOUR_EMAIL@example.com with your real email -->
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/YOUR_EMAIL@example.com"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from Recipe Haven"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="true"
+          >
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+                maxlength="100"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+                maxlength="254"
+              >
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>
+                Select a subject
+              </option>
+              <option value="Recipe Question">Recipe Question</option>
+              <option value="Recipe Suggestion">Recipe Suggestion</option>
+              <option value="Website Feedback">Website Feedback</option>
+              <option value="Technical Support">Technical Support</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here..."
+              required
+              minlength="10"
+              maxlength="3000"
+            ></textarea>
+            <small>Minimum 10 characters.</small>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Message <span>→</span>
+          </button>
+
+          <p class="privacy-note">
+            Your information will be used to respond to your message.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="contact-footer">
+    <a href="index.html" class="logo">
+      Recipe<span>Haven.</span>
+    </a>
+
+    <p>Made for people who love good food. © 2026</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Recipe Haven | Find Your Next Favorite</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Recipe<span>Haven.</span></a>
+
+    
+<nav>
+  <a href="#recipes">Recipes</a>
+  <a href="#categories">Categories</a>
+  <a href="#about">About</a>
+  <a href="contact.html" class="contact-nav-btn">Contact Us</a>
+</nav>
+
+    <button class="saved-btn" id="savedBtn" type="button">
+      ♡ Saved <span id="savedCount">0</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+
+        <span class="eyebrow">GOOD FOOD, GOOD MOOD</span>
+
+        <h1>
+          Find your next<br>
+          favorite <em>recipe.</em>
+        </h1>
+
+        <p>
+          Discover delicious dishes, easy weeknight meals,
+          and recipes worth sharing.
+        </p>
+
+        <form id="searchForm" class="search-box">
+          <span>⌕</span>
+
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search chicken, pasta, dessert..."
+            aria-label="Search recipes"
+          >
+
+          <button type="submit">Search</button>
+        </form>
+
+        <p class="popular">
+          Popular:
+          <a href="#recipes" data-search="pasta">Pasta</a> ·
+          <a href="#recipes" data-search="chicken">Chicken</a> ·
+          <a href="#recipes" data-search="cake">Cake</a>
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85"
+          alt="Fresh colorful food bowl"
+        >
+
+        <div class="floating-note">
+          ✦ Made with love<br>
+          <small>One delicious meal at a time</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section" id="categories">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE YOUR CRAVINGS</span>
+          <h2>What sounds good?</h2>
+        </div>
+      </div>
+
+      <div class="category-list">
+
+        <button
+          class="category active"
+          data-category="All"
+          type="button"
+        >
+          🍽️ <span>All Recipes</span>
+        </button>
+
+        <button
+          class="category"
+          data-category="Breakfast"
+          type="button"
+        >
+          🍳 <span>Breakfast</span>
+        </button>
+
+        <button
+          class="category"
+          data-category="Lunch"
+          type="button"
+        >
+          🥗 <span>Lunch</span>
+        </button>
+
+        <button
+          class="category"
+          data-category="Dinner"
+          type="button"
+        >
+          🍲 <span>Dinner</span>
+        </button>
+
+        <button
+          class="category"
+          data-category="Dessert"
+          type="button"
+        >
+          🍰 <span>Desserts</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="section recipes-section" id="recipes">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">HANDPICKED FOR YOU</span>
+          <h2 id="recipeHeading">Recipes you'll love</h2>
+        </div>
+
+        <span class="recipe-total" id="recipeTotal"></span>
+      </div>
+      <div class="recipe-rating">
+  <span class="stars" aria-label="${} out of 5 stars">
+    ★★★★★
+  </span>
+  <span class="rating-number">${}</span>
+  <span class="rating-label">/ 5</span>
+</div>
+
+
+<div class="recipe-meta">
+  <span>◷ ${recipe.time}</span>
+  <span>${recipe.difficulty}</span>
+</div>
+
+
+      <!-- JavaScript will display recipe cards here -->
+      <div class="recipe-grid" id="recipeGrid"></div>
+
+      <p id="emptyMessage" class="empty-message" hidden>
+        No recipes found. Try another search!
+      </p>
+
+    </section>
+
+    <!-- About / Newsletter Section -->
+    <section class="newsletter" id="about">
+
+      <span class="eyebrow">A LITTLE INSPIRATION</span>
+
+      <h2>Your next great meal starts here.</h2>
+
+      <p>
+        Explore recipes, save your favorites,
+        and make every meal special.
+      </p>
+
+      <a href="#recipes" class="newsletter-link">
+        Explore recipes ↓
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#" class="logo">Recipe<span>Haven.</span></a>
+
+    <p>Made for people who love good food. © 2026</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
